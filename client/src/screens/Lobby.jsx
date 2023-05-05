@@ -35,31 +35,33 @@ const LobbyScreen = () => {
 
   return (
     <>
+    
       <div className="form">
               <div className="title">Lobby</div>
               <div className="subtitle">Your Email & Room, Please:</div>
-              <div className="input-container ic1">
-                <input
-                    className="input"
-                    type="email"
-                    id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)} />
-                    <div className="cut"></div>
-                    <label className="placeholder" htmlFor="email">Email ID</label>
-                </div>
-              <div class="input-container ic2">
+              <form onSubmit={handleSubmitForm}>
+                <div className="input-container ic1">
                   <input
-                  className="input"
-                  type="text"
-                  id="room"
-                  value={room}
-                  onChange={(e) => setRoom(e.target.value)} />  
-                  <div class="cut"></div>
-                  <label className="placeholder" htmlFor="room">Room Number</label>
-              </div>
-              
-              <button type="text" className="submit">Join</button>
+                      className="input"
+                      type="email"
+                      id="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)} />
+                      <div className="cut"></div>
+                      <label className="placeholder" htmlFor="email">Email ID</label>
+                </div>
+                <div class="input-container ic2">
+                    <input
+                    className="input"
+                    type="text"
+                    id="room"
+                    value={room}
+                    onChange={(e) => setRoom(e.target.value)} />  
+                    <div class="cut"></div>
+                    <label className="placeholder" htmlFor="room">Room Number</label>
+                </div>
+                <button type="text" className="submit">Join</button>
+              </form>
         </div>
     </>
 

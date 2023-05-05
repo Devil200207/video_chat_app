@@ -5,6 +5,15 @@ body {
     justify-content: center;
     height: 100vh;
   }
+
+  h1{
+    color: white;
+  }
+
+  .sendS
+  {
+    margin-top: 20px;
+  }
   
   .form 
   {
